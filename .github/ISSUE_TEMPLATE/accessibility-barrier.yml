@@ -1,0 +1,28 @@
+name: Accessibility barrier
+description: Describe a task that is difficult or impossible to complete.
+title: "[Accessibility] "
+labels: [accessibility]
+body:
+  - type: markdown
+    attributes:
+      value: "This report is public. Please omit real financial information — account numbers, balances, transactions, receipts — and identifying screenshots. A plain-language description is enough."
+  - type: input
+    id: versions
+    attributes:
+      label: Device, iOS version, and app version
+  - type: input
+    id: technology
+    attributes:
+      label: Assistive technology or settings, if relevant
+      placeholder: "For example, VoiceOver, Voice Control, Larger Text, or Reduce Motion."
+  - type: textarea
+    id: barrier
+    attributes:
+      label: What were you trying to do, and what stopped you?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps or suggested improvement
+      description: Optional. Use invented accounts and amounts if you describe sample data.
